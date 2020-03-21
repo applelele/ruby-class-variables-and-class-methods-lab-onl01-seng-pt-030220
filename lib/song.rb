@@ -31,14 +31,15 @@ class Song
   
   def self.genre_count
     @@genre_count = {}
-    num = 1
+
     @@genres.collect do |v|
       if @@genre_count.keys.include?(v)
-        num += 1
+        @@genre_count[v] += 1
       else
-        @@genre_count[v] = num
+        @@genre_count[v] = 1
       end
     end
+    @@genre_count
   end
   
 def self.artist_count
