@@ -57,9 +57,9 @@ def self.artist_count
   end
 
   
-  Song.count
-  Song.artists
-  Song.genres
-  Song.genre_count
-  Song.artist_count
+  # Song.count
+  # Song.artists
+  # Song.genres
+  # Song.genre_count
+  # Song.artist_count
 end
