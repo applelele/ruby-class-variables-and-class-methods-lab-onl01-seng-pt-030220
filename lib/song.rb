@@ -41,15 +41,15 @@ class Song
     end
   end
   
-    def self.artist_count
+def self.artist_count
     @@artist_count = {}
-    num = 1
+
     @@artists.collect do |v|
       if @@artist_count.keys.include?(v)
-        num += 1
-        @@artist_count[v] = num
+     
+        @@artist_count[v] += 1
       else
-        @@artist_count[v] = num
+        @@artist_count[v] = 1
       end
     end
     @@artist_count
