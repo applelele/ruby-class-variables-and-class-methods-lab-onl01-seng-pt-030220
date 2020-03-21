@@ -52,6 +52,7 @@ class Song
         @@artist_count[v] = num
       end
     end
+    @@artist_count
   end
 
   
